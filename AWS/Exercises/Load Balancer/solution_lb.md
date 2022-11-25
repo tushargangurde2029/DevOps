@@ -5,9 +5,7 @@
 1) Create 2 different instances where 2 different websites hosted on that machines as shown in the image.
 <p align="center"><img src="Images/lb_ex01/lb1.jpg"/></p>
 2) Create a Security Group (where inbound & outbound rules specify as per the needs)
-
 3) Create a Target Group (where 2 instances allocated as per the requirement)
-
 
 ### Create a Security Group (with specific inbound/outbound rules)
 Search Security Groups on your AWS Console.
