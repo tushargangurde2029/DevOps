@@ -32,28 +32,28 @@ Give a name for your target group and let the all settings remain as it is.
 For Settings Refer the below image.
 <p align="center"><img src="Images/lb_ex01/lb5.jpg"/></p>
 Now click on next. After clicking Next choose the 2 Available instances and click on include as pending refer the below Image.
-
+<p align="center"><img src="Images/lb_ex01/lb6.jpg"/></p>
 In review targets you can see 2 instances as shown in the image now click on Create a Target Group.
 
 Now you are ready to go to create a new application load balancer as your pre-requisites are completed.
 
 #### Create a Application Load Balancer (Which is our Main Goal)
 Go to your EC2 dashboard and search for load balancing ec2.
-
+<p align="center"><img src="Images/lb_ex01/lb7.jpg"/></p>
 Now open Load Balancers and click on Create a Load Balancer, after that choose Application load balancer and click on create.
 
 Give your Load Balancer Name. In Network mapping select all the subnets are available as shown in the image. (Select all the available subnets)
-
+<p align="center"><img src="Images/lb_ex01/lb8.jpg"/></p>
 Now select your security group and target group which we are created for the pre-requisites.
-
+<p align="center"><img src="Images/lb_ex01/lb9.jpg"/></p>
 Now click on Create Load Balancer.
 
 Once your load balancer state is active you can use your load balancer 
-
+<p align="center"><img src="Images/lb_ex01/lb10.jpg"/></p>
 Now open the website with the help of DNS Name copy that URL and open it in new tab.
-
+<p align="center"><img src="Images/lb_ex01/lb11.jpg"/></p>
 In the Below Image you can see with 1 URL we can visit 2 different websites hosted on 2 different machines.
-
+<p align="center"><img src="Images/lb_ex01/lb12.jpg"/></p>
 Follow For More Devops: -
 
 https://www.linkedin.com/in/devops-learning
