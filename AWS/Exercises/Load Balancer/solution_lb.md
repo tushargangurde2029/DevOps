@@ -10,10 +10,15 @@ image.
 
 ### Create a Security Group (with specific inbound/outbound rules)
 Search Security Groups on your AWS Console.
+
 Now open security Groups and click on Create a New Security Group
+
 Now give a name & description for your Security Group.
+
 Specify the Inbound rule as HTTP and Source anywhere so your website is accessible globally.
+
 Note: Its important to specify inbound rule as HTTP & Source as anywhere.
+
 Now Click on Create a New Security Group
 
 ### Create a Target Group (where you specify instances for your load balancer)
