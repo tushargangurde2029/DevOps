@@ -24,4 +24,4 @@
 
 |Name|Services|Problem Statement|Difficulty|Solution|
 |--------|--------|------|----|----|
-| Create MySQL DB | RDS | [Exercise](Exercises/Create_DB_RDS/exercise.md) | Medium | [Solution](Exercises/Create_DB_RDS/solution.md) |
+| Create MySQL DB | RDS | [Exercise](Exercises/Create_DB_RDS/exercise.md) | Easy | [Solution](Exercises/Create_DB_RDS/solution.md) |
