@@ -17,4 +17,4 @@
 
 |Name|Services|Problem Statement|Difficulty|Solution|
 |--------|--------|------|----|----|
-| Python Application | EC2 | [Exercise](Exercises/Elastic_Beanstalk_Python_App/exercise.md) | Easy | [Solution](Exercises/Elastic_Beanstalk_Python_App/Solution_Elastic_Beanstalk_Python.md) |
+| Python Application | Elastic Beanstalk | [Exercise](Exercises/Elastic_Beanstalk_Python_App/exercise.md) | Easy | [Solution](Exercises/Elastic_Beanstalk_Python_App/Solution_Elastic_Beanstalk_Python.md) |
