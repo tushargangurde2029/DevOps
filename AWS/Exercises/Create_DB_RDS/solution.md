@@ -12,6 +12,7 @@ Give your Database Name & Password (should be 8 characters)
 
 Choose Instance as db.t2.micro 
 <kbd><img src="Images/3.jpg"/></kbd>
+</br>
 Storage Allocated as 20 GiB
 <p align="center"><img src="Images/4.jpg"/></p>
 Enable Storage Autoscaling, we are using 22 Gib as Maximum threshold 
