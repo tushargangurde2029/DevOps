@@ -14,27 +14,27 @@ Now the most important steps.
 
 Install the Apache Server By using Below Command
 
-'''
+```
 yum install –y httpd
-'''
+```
 
 Now start the Apache service by using below command
 
-'''
+```
 systemctl start httpd
-'''
+```
 
 Now to run Apache Service automatically at startup use the below command 
 
-'''
+```
 systemctl enable httpd
-'''
+```
 
 Now to put your html code to the file use below command
 
-'''
+```
 echo “<h1>Hello World</h1>” /var/www/html/index.html
-'''
+```
 
 Now Access your website with the public IPV4 address.
 <p align="center"><img src="Images/5.jpg"/></p>
