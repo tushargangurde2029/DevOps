@@ -11,7 +11,7 @@ Templates Should be Free Tier, so it will not charge anything
 Give your Database Name & Password (should be 8 characters)
 
 Choose Instance as db.t2.micro 
-<p align="center"><img src="Images/3.jpg"/></p>
+<kbd align="center"><img src="Images/3.jpg"/></kbd>
 Storage Allocated as 20 GiB
 <p align="center"><img src="Images/4.jpg"/></p>
 Enable Storage Autoscaling, we are using 22 Gib as Maximum threshold 
