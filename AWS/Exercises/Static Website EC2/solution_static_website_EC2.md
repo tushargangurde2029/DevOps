@@ -39,7 +39,7 @@ echo “<h1>Hello World</h1>” /var/www/html/index.html
 Now Access your website with the public IPV4 address.
 <p align="center"><img src="Images/5.jpg"/></p>
 
-<p align="center"><img src="Images/1.jpg"/></p>
+<p align="center"><img src="Images/6.jpg"/></p>
 
 Follow For More Devops: -
 
