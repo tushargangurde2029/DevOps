@@ -5,3 +5,10 @@
 |Name|Services|Problem Statement|Difficulty|Solution|
 |--------|--------|------|----|----|
 | Host Static Website on EC2 | EC2 | [Exercise](Exercises/Static_Website_EC2/exercise.md) | Medium | [Solution](Exercises/Static_Website_EC2/solution_static_website_EC2.md) |
+
+
+### Load Balancer
+
+|Name|Services|Problem Statement|Difficulty|Solution|
+|--------|--------|------|----|----|
+| Application Load Balancer | EC2 | [Exercise](Exercises/Load_Balancer/exercise.md) | Medium | [Solution](Exercises/Load_Balancer/solution_lb.md) |
