@@ -2,6 +2,6 @@
 
 ### EC2
 
-|Name|Topic|Objective & Instructions|Solution|Comments|
+|Name|Services|Problem Statement|Solution|Comments|
 |--------|--------|------|----|----|
-| Create a User | IAM | [Exercise](exercises/create_user/exercise.md) | [Solution](exercises/create_user/solution.md) | |
+| Host Static Website on EC2 | EC2 | [Exercise](exercises/create_user/exercise.md) | [Solution](exercises/create_user/solution.md) | |
