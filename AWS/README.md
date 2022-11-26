@@ -11,4 +11,10 @@
 
 |Name|Services|Problem Statement|Difficulty|Solution|
 |--------|--------|------|----|----|
-| Application Load Balancer | EC2 | [Exercise](Exercises/Load_Balancer/exercise.md) | Medium | [Solution](Exercises/Load_Balancer/solution_lb.md) |
+| Application Load Balancer | ALB | [Exercise](Exercises/Load_Balancer/exercise.md) | Medium | [Solution](Exercises/Load_Balancer/solution_lb.md) |
+
+### Elastic Beanstalk
+
+|Name|Services|Problem Statement|Difficulty|Solution|
+|--------|--------|------|----|----|
+| Python Application | EC2 | [Exercise](Exercises/Elastic_Beanstalk_Python_App/exercise.md) | Easy | [Solution](Exercises/Elastic_Beanstalk_Python_App/Solution_Elastic_Beanstalk_Python.md) |
