@@ -18,3 +18,10 @@
 |Name|Services|Problem Statement|Difficulty|Solution|
 |--------|--------|------|----|----|
 | Python Application | Elastic Beanstalk | [Exercise](Exercises/Elastic_Beanstalk_Python_App/exercise.md) | Easy | [Solution](Exercises/Elastic_Beanstalk_Python_App/Solution_Elastic_Beanstalk_Python.md) |
+
+
+### Database
+
+|Name|Services|Problem Statement|Difficulty|Solution|
+|--------|--------|------|----|----|
+| Create MySQL DB | RDS | [Exercise](Exercises/Create_DB_RDS/exercise.md) | Medium | [Solution](Exercises/Create_DB_RDS/solution.md) |
