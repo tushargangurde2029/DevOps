@@ -34,3 +34,4 @@
 |Name|Services|Problem Statement|Difficulty|Solution|
 |--------|--------|------|----|----|
 | Create MySQL DB | RDS | [Exercise](Exercises/Create_DB_RDS/exercise.md) | Easy | [Solution](Exercises/Create_DB_RDS/solution.md) |
+| Create NoSQL DB | DynamoDB | [Exercise](Exercises/NoSQL_DynamoDB/exercise.md) | Easy | [Solution](Exercises/NoSQL_DynamoDB/solution.md) |
