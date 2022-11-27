@@ -1,5 +1,14 @@
 ## Exercises
 
+
+
+### IAM
+
+|Name|Services|Problem Statement|Difficulty|Solution|
+|--------|--------|------|----|----|
+| Create an Admin Usr | IAM | [Exercise](Exercises/IAM_User/exercise.md) | easy | [Solution](Exercises/IAM_User/solution.md) |
+
+
 ### EC2
 
 |Name|Services|Problem Statement|Difficulty|Solution|
