@@ -38,7 +38,7 @@ In Policies select `Administrator Access`
 
 Click on Next Tags
 
-We are using tags as key(role)=Value(tester), You can give anything as per your needs
+We are using tags as key(`role`)=Value(`tester`), You can give anything as per your needs
 
 </br>
 <kbd align="center"><img src="Images/6.jpg"/></kbd>
