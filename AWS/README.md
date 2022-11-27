@@ -6,7 +6,7 @@
 
 |Name|Services|Problem Statement|Difficulty|Solution|
 |--------|--------|------|----|----|
-| Create an Admin Usr | IAM | [Exercise](Exercises/IAM_User/exercise.md) | Easy | [Solution](Exercises/IAM_User/solution.md) |
+| Create an Admin User | IAM | [Exercise](Exercises/IAM_User/exercise.md) | Easy | [Solution](Exercises/IAM_User/solution.md) |
 
 
 ### EC2
