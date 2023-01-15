@@ -28,17 +28,63 @@
 - Provide your email address and click on `Create Identity`
 - Verify the email address by opening the AWS mail
 - Once your Verification Done you can see the status as shown in below image
-- ![Architectural Diagram](Images/2.jpg)
+![Architectural Diagram](Images/2.jpg)
 
 ### Step 2:
 - Follow the tutorial on how to host a static website on S3 bucket
-  - [AWS S3 tutorial for hosting a static website](https://aws.amazon.com/s3/getting-started/host-a-static-website/)
+  - [AWS S3 tutorial for hosting a static website]([https://aws.amazon.com/s3/getting-started/host-a-static-website/](https://www.linkedin.com/posts/devops-learning_resumes3cloudfrontroute53awscertificatemanager-activity-7015715474747371520-4pHv?utm_source=share&utm_medium=member_desktop))
 
 ### Step 3:
 - Go to Amazon Console and search for `Lambda`
 - Open the `Lambda Service` and click on `Create Function`
 - Provide the function name and runtime architecture (we're using Python)
 - Add the necessary code and deploy it
+<p align="center">
+  <em>Code Explained in below Diagram</em>
+  <br>
+</p>
+
+![Architectural Diagram](Images/3.jpg)
+
+'''
+import boto3
+import json
+import urllib.parse
+
+
+def lambda_handler(event, context):
+    ses = boto3.client('ses')
+    
+    formdata = event;
+    formData = urllib.parse.parse_qs(event['body'])
+    name = formData['name'][0]
+    subject = formData['subject'][0]
+    message = formData['message'][0]
+
+    response = ses.send_email(
+        Destination={
+            'ToAddresses': ['your-email-address']
+        },
+        Message={
+            'Body': {
+                'Text': {
+                    'Data': 'Email-Body'
+                }
+            },
+            'Subject': {
+                'Data': 'email-subject'
+            }
+        },
+        Source='your-email-addresss'
+    )
+    return {
+       "statusCode": 303,
+        "headers": {
+            "Location": "after-successful-mail-give-website-url-to-redirect",
+        },
+        "body": "Redirecting..."
+    }
+'''
 - Give the Lambda function access to SES by creating a role and providing necessary policies
   - Go to `IAM` -> `Roles`
   - Create a role and provide the following policies:
