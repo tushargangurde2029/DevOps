@@ -112,6 +112,7 @@ def lambda_handler(event, context):
 - Check your recipient email box to see if the email was sent successfully
 - As you can see i have received the below response 
 <br>
+
 ![Architectural Diagram](Images/7.jpg)
 
 
