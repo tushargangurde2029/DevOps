@@ -35,3 +35,9 @@
 |--------|--------|------|----|----|
 | Create MySQL DB | RDS | [Exercise](Exercises/Create_DB_RDS/exercise.md) | Easy | [Solution](Exercises/Create_DB_RDS/solution.md) |
 | Create NoSQL DB | DynamoDB | [Exercise](Exercises/NoSQL_DynamoDB/exercise.md) | Easy | [Solution](Exercises/NoSQL_DynamoDB/solution.md) |
+
+
+### Lambd
+|Name|Services|Problem Statement|Difficulty|Solution|
+|--------|--------|------|----|----|
+| Create a Lambda function that sends an email using AWS SES |Lambda,SES,API Gateway | [Exercise](Exercises/Create_DB_RDS/exercise.md) | Easy | [Solution](Exercises/Create_DB_RDS/solution.md) |
