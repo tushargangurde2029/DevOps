@@ -1,0 +1,37 @@
+import boto3
+import json
+import urllib.parse
+
+
+def lambda_handler(event, context):
+    ses = boto3.client('ses')
+    
+    formdata = event;
+    formData = urllib.parse.parse_qs(event['body'])
+    name = formData['name'][0]
+    subject = formData['subject'][0]
+    message = formData['message'][0]
+
+    response = ses.send_email(
+        Destination={
+            'ToAddresses': ['your-email-address']
+        },
+        Message={
+            'Body': {
+                'Text': {
+                    'Data': 'Email-Body'
+                }
+            },
+            'Subject': {
+                'Data': 'email-subject'
+            }
+        },
+        Source='your-email-addresss'
+    )
+    return {
+       "statusCode": 303,
+        "headers": {
+            "Location": "after-successful-mail-give-website-url-to-redirect",
+        },
+        "body": "Redirecting..."
+    }
