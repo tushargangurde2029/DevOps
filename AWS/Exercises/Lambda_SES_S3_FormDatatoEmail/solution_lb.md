@@ -1,12 +1,12 @@
-Exercise: Create a Lambda function that sends an email using AWS SES
+# Exercise: Create a Lambda function that sends an email using AWS SES
 
-Prerequisites:
+## Prerequisites:
 - AWS Account
 - An S3 bucket where you will host the HTML form
 - An email address for Amazon SES
 - Basic Knowledge About S3, Lambda Functions & Amazon SES
 
-Steps:
+## Steps:
 1. Create an AWS SES email address and verify it
 2. Create an S3 bucket to host your form
 3. Create an AWS Lambda function
@@ -15,39 +15,40 @@ Steps:
 6. Test the form submission by filling out the form fields and submitting the form
 7. Check your recipient email box
 
-Step 1:
-Create an AWS SES email address and verify it
+### Step 1:
 - Go to your AWS Console and open Simple Email Service (SES)
-- Click on Create Identity
-- Provide your email address and click on Create Identity
+- Click on `Create Identity`
+- Provide your email address and click on `Create Identity`
 - Verify the email address by opening the AWS mail
 
-Step 2:
-Create an S3 bucket to host your form
-- Follow the tutorial on how to host a static website
+### Step 2:
+- Follow the tutorial on how to host a static website on S3 bucket
+  - [AWS S3 tutorial for hosting a static website](https://aws.amazon.com/s3/getting-started/host-a-static-website/)
 
-Step 3:
-Create an AWS Lambda function
-- Go to Amazon Console and search for Lambda
-- Open the Lambda Service and click on Create Function
+### Step 3:
+- Go to Amazon Console and search for `Lambda`
+- Open the `Lambda Service` and click on `Create Function`
 - Provide the function name and runtime architecture (we're using Python)
 - Add the necessary code and deploy it
 - Give the Lambda function access to SES by creating a role and providing necessary policies
+  - Go to `IAM` -> `Roles`
+  - Create a role and provide the following policies:
+    - `AmazonSESFullAccess`
+    - `AWSLambdaExecute`
+  - Assign the role to the Lambda function in the `Permissions` tab of the function configuration
 
-Step 4:
-Create an API Gateway
-- Open the Lambda Service in AWS
-- Go to Configuration -> Triggers -> Add Trigger
-- Select API Gateway as the source and create a new REST API
+### Step 4:
+- Open the `Lambda Service` in AWS
+- Go to `Configuration` -> `Triggers` -> `Add Trigger`
+- Select `API Gateway` as the source and create a new `REST API`
 - Copy the endpoint URL and save it
 
-Step 5:
-Update the form details
+### Step 5:
 - Go to your S3 bucket and download the form HTML page
-- Modify the action in the form by adding the API Gateway endpoint URL
+- Modify the `action` attribute in the form to use the API Gateway endpoint URL
 
-Step 6:
-Test the application by filling out the form
+### Step 6:
+- Test the application by filling out the form
 
-Step 7:
-Check your recipient email box to see if the email was sent successfully
+### Step 7:
+- Check your recipient email box to see if the email was sent successfully
