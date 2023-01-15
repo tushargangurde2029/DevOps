@@ -101,9 +101,14 @@ def lambda_handler(event, context):
 ### Step 5:
 - Go to your S3 bucket and download the form HTML page
 - Modify the `action` attribute in the form to use the API Gateway endpoint URL
+- Check the Below Image for Reference
+![Architectural Diagram](Images/5.jpg)
 
 ### Step 6:
 - Test the application by filling out the form
+![Architectural Diagram](Images/6.jpg)
 
 ### Step 7:
 - Check your recipient email box to see if the email was sent successfully
+- As you can see i have received the below response 
+![Architectural Diagram](Images/7.jpg)
