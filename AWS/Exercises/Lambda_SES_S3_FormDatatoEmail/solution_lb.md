@@ -1,7 +1,7 @@
 # Exercise: Create a Lambda function that sends an email using AWS SES
 
 <p align="center">
-  <em>Image caption or description</em>
+  <em>Architectural Diagram</em>
   <br>
 </p>
 
@@ -27,6 +27,8 @@
 - Click on `Create Identity`
 - Provide your email address and click on `Create Identity`
 - Verify the email address by opening the AWS mail
+- Once your Verification Done you can see the status as shown in below image
+- ![Architectural Diagram](Images/2.jpg)
 
 ### Step 2:
 - Follow the tutorial on how to host a static website on S3 bucket
