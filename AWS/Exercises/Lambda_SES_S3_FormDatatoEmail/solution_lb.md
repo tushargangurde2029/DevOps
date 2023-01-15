@@ -1,6 +1,10 @@
 # Exercise: Create a Lambda function that sends an email using AWS SES
 
-![Architectural Diagram](Images/1.jpg)
+<p align="center">
+  <em>Image caption or description</em>
+  <br>
+  ![Architectural Diagram](Images/1.jpg)
+</p>
 
 ## Prerequisites:
 - AWS Account
