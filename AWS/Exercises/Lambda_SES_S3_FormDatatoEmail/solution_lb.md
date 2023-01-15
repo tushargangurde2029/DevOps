@@ -46,7 +46,7 @@
 
 ![Architectural Diagram](Images/3.jpg)
 
-'''
+```
 import boto3
 import json
 import urllib.parse
@@ -84,7 +84,7 @@ def lambda_handler(event, context):
         },
         "body": "Redirecting..."
     }
-'''
+```
 - Give the Lambda function access to SES by creating a role and providing necessary policies
   - Go to `IAM` -> `Roles`
   - Create a role and provide the following policies:
