@@ -1,16 +1,20 @@
-## Problem Statement 
+## Problem Statement:
 
-### How to create a Simple Application Load Balancer on AWS
+Create a Lambda function that sends an email using AWS SES.
 
-### Pre-requisites: -
-1) Create 2 different instances where 2 different websites hosted on that machines as shown in the image.</br>
-For Reference =[How to Host static Website on EC2](../Static_Website_EC2/solution_static_website_EC2.md)
-2) Create a Security Group (where inbound & outbound rules specify as per the needs)
-3) Create a Target Group (where 2 instances allocated as per the requirement)
+## Requirements:
+- AWS Account
+- An S3 bucket where you will host the HTML form
+- An email address for Amazon SES
+- Basic Knowledge About S3, Lambda Functions & Amazon SES
 
-### Steps:-
-1) After Done With Pre-requisites Go to load Balancer Create A Load Balancer.
-2) While Creating Provide All the subnets that are available and provide security & target group.
-3) Once Done Create the Load Balancer & Verify the Load Balancer is handling 2 different machines or not.
+## Deliverables:
+- A Lambda function that can be triggered by an HTML form
+- An S3 bucket hosting the HTML form
+- A verified email address for Amazon SES
+- A detailed documentation on how to set up and test the solution
 
-Click [here to view the Solution](solution_lb.md)
+## Constraints:
+- The solution should be scalable and able to handle high traffic
+- The solution should be secure and follow best practices for data privacy
+- The solution should be cost-effective
