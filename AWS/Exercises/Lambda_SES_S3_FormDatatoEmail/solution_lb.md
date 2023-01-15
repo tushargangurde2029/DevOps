@@ -3,8 +3,8 @@
 <p align="center">
   <em>Image caption or description</em>
   <br>
-  ![Architectural Diagram](Images/1.jpg)
 </p>
+![Architectural Diagram](Images/1.jpg)
 
 ## Prerequisites:
 - AWS Account
