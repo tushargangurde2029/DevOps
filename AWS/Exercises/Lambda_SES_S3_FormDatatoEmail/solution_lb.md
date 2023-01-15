@@ -1,6 +1,6 @@
 # Exercise: Create a Lambda function that sends an email using AWS SES
 
-![Creating an email address on AWS SES](Images/1.jpg)
+![Architectural Diagram](Images/1.jpg)
 
 ## Prerequisites:
 - AWS Account
