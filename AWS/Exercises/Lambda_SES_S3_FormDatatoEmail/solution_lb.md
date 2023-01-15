@@ -4,6 +4,7 @@
   <em>Image caption or description</em>
   <br>
 </p>
+
 ![Architectural Diagram](Images/1.jpg)
 
 ## Prerequisites:
