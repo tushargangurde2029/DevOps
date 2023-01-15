@@ -32,7 +32,7 @@
 
 ### Step 2:
 - Follow the tutorial on how to host a static website on S3 bucket
-  - [AWS S3 tutorial for hosting a static website]([https://www.linkedin.com/posts/devops-learning_resumes3cloudfrontroute53awscertificatemanager-activity-7015715474747371520-4pHv?utm_source=share&utm_medium=member_desktop])
+  - [AWS S3 tutorial for hosting a static website](https://aws.amazon.com/s3/getting-started/host-a-static-website/)
 
 ### Step 3:
 - Go to Amazon Console and search for `Lambda`
