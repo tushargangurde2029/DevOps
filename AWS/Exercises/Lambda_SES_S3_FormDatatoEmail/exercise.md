@@ -18,3 +18,5 @@ Create a Lambda function that sends an email using AWS SES.
 - The solution should be scalable and able to handle high traffic
 - The solution should be secure and follow best practices for data privacy
 - The solution should be cost-effective
+
+Click [here to view the Solution](solution.md)
