@@ -111,4 +111,10 @@ def lambda_handler(event, context):
 ### Step 7:
 - Check your recipient email box to see if the email was sent successfully
 - As you can see i have received the below response 
+<br>
 ![Architectural Diagram](Images/7.jpg)
+
+
+Follow For More Devops: -
+
+https://www.linkedin.com/in/devops-learning
