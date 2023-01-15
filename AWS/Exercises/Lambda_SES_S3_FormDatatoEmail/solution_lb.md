@@ -1,58 +1,53 @@
-## Application Load Balancer on AWS
+Exercise: Create a Lambda function that sends an email using AWS SES
 
-### Pre-requisites: -
+Prerequisites:
+- AWS Account
+- An S3 bucket where you will host the HTML form
+- An email address for Amazon SES
+- Basic Knowledge About S3, Lambda Functions & Amazon SES
 
-1) Create 2 different instances where 2 different websites hosted on that machines as shown in the image.
-<p align="center"><img src="Images/lb_ex01/lb1.jpg"/></p>
-2) Create a Security Group (where inbound & outbound rules specify as per the needs)<br />
-3) Create a Target Group (where 2 instances allocated as per the requirement)
+Steps:
+1. Create an AWS SES email address and verify it
+2. Create an S3 bucket to host your form
+3. Create an AWS Lambda function
+4. Create a new API Gateway and connect it to your Lambda function
+5. Update the form action attribute to the API Gateway API endpoint URL
+6. Test the form submission by filling out the form fields and submitting the form
+7. Check your recipient email box
 
-### Create a Security Group (with specific inbound/outbound rules)
-Search Security Groups on your AWS Console.
-<p align="center"><img src="Images/lb_ex01/lb2.jpg"/></p>
-Now open security Groups and click on Create a New Security Group
+Step 1:
+Create an AWS SES email address and verify it
+- Go to your AWS Console and open Simple Email Service (SES)
+- Click on Create Identity
+- Provide your email address and click on Create Identity
+- Verify the email address by opening the AWS mail
 
-Now give a name & description for your Security Group.
+Step 2:
+Create an S3 bucket to host your form
+- Follow the tutorial on how to host a static website
 
-Specify the Inbound rule as HTTP and Source anywhere so your website is accessible globally.
+Step 3:
+Create an AWS Lambda function
+- Go to Amazon Console and search for Lambda
+- Open the Lambda Service and click on Create Function
+- Provide the function name and runtime architecture (we're using Python)
+- Add the necessary code and deploy it
+- Give the Lambda function access to SES by creating a role and providing necessary policies
 
-Note: Its important to specify inbound rule as HTTP & Source as anywhere.
-<p align="center"><img src="Images/lb_ex01/lb3.jpg"/></p>
-Now Click on Create a New Security Group
+Step 4:
+Create an API Gateway
+- Open the Lambda Service in AWS
+- Go to Configuration -> Triggers -> Add Trigger
+- Select API Gateway as the source and create a new REST API
+- Copy the endpoint URL and save it
 
-### Create a Target Group (where you specify instances for your load balancer)
-<p align="center"><img src="Images/lb_ex01/lb4.jpg"/></p>
-Search Target Groups on your AWS Console.
+Step 5:
+Update the form details
+- Go to your S3 bucket and download the form HTML page
+- Modify the action in the form by adding the API Gateway endpoint URL
 
-Now open Target Groups and click on Create a Target Group
+Step 6:
+Test the application by filling out the form
 
-Give a name for your target group and let the all settings remain as it is.
-
-For Settings Refer the below image.
-<p align="center"><img src="Images/lb_ex01/lb5.jpg"/></p>
-Now click on next. After clicking Next choose the 2 Available instances and click on include as pending refer the below Image.
-<p align="center"><img src="Images/lb_ex01/lb6.jpg"/></p>
-In review targets you can see 2 instances as shown in the image now click on Create a Target Group.
-
-Now you are ready to go to create a new application load balancer as your pre-requisites are completed.
-
-#### Create a Application Load Balancer (Which is our Main Goal)
-Go to your EC2 dashboard and search for load balancing ec2.
-<p align="center"><img src="Images/lb_ex01/lb7.jpg"/></p>
-Now open Load Balancers and click on Create a Load Balancer, after that choose Application load balancer and click on create.
-
-Give your Load Balancer Name. In Network mapping select all the subnets are available as shown in the image. (Select all the available subnets)
-<p align="center"><img src="Images/lb_ex01/lb8.jpg"/></p>
-Now select your security group and target group which we are created for the pre-requisites.
-<p align="center"><img src="Images/lb_ex01/lb9.jpg"/></p>
-Now click on Create Load Balancer.
-
-Once your load balancer state is active you can use your load balancer 
-<p align="center"><img src="Images/lb_ex01/lb10.jpg"/></p>
-Now open the website with the help of DNS Name copy that URL and open it in new tab.
-<p align="center"><img src="Images/lb_ex01/lb11.jpg"/></p>
-In the Below Image you can see with 1 URL we can visit 2 different websites hosted on 2 different machines.
-<p align="center"><img src="Images/lb_ex01/lb12.jpg"/></p>
-Follow For More Devops: -
-
-https://www.linkedin.com/in/devops-learning
+Step 7:
+Check your recipient email box to see if the email was sent successfully
